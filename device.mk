@@ -97,8 +97,12 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     AospWifiResOverlayMarble \
+    ApertureResOverlayMarble \
     CarrierConfigResCommon \
     CarrierConfigResOverlay \
     FrameworksResCommon \
@@ -112,15 +116,12 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
-    ApertureResOverlayMarble
-
-PRODUCT_PACKAGES += \
     SettingsOverlayGlobal \
     SettingsOverlayIndia \
     SettingsOverlayChina \
     SettingsProviderOverlayGlobal \
     SettingsProviderOverlayIndia \
-    SettingsProviderOverlayChina \
+    SettingsProviderOverlayChina
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
