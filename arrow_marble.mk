@@ -8,18 +8,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from marble device.
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
 ## Device identifier
 PRODUCT_DEVICE := marble
-PRODUCT_NAME := lineage_marble
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := 23049RAD8C
+PRODUCT_NAME := arrow_marble
+PRODUCT_BRAND := Poco
+PRODUCT_MODEL := Poco F5
 PRODUCT_MANUFACTURER := Xiaomi
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Arrow stuff
+ARROW_GAPPS := true
