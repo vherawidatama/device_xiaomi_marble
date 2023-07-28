@@ -75,8 +75,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    bootinfo.fingerprint=$(ARROW_VERSION) \
-    mtdoops.fingerprint=$(ARROW_VERSION)
+    bootinfo.fingerprint=$(CHERISH_VERSION) \
+    mtdoops.fingerprint=$(CHERISH_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \

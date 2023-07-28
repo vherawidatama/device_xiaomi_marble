@@ -5,9 +5,12 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_marble.mk
+    $(LOCAL_DIR)/arrow_marble.mk \
+    $(LOCAL_DIR)/cherish_marble.mk \
 
 COMMON_LUNCH_CHOICES := \
     arrow_marble-eng \
     arrow_marble-userdebug \
-    arrow_marble-user
+    arrow_marble-user \
+    cherish_marble-userdebug \
+
